@@ -21,7 +21,7 @@ function addStamp() {
 
     if (stamps === maxStamps) {
         // display message
-        message.textContent = "Earned a free product";
+        message.textContent = "Earned a free product!";
 
     }
 }
