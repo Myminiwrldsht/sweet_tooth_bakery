@@ -1,37 +1,36 @@
 // loyalty card 
 let stamps = 0;
 const maxStamps = 10;
-const card = document.getElementById("cards");
-const message = document.getElementById("message");
 
-// the for loop
+
+// the for loop to determine whether to add a stamp
 for (let i = 0; i < maxStamps; 1++) {
-    let div = document.createElement("div");
-    div.classList.add("stamp");
-    card.appendChild(div);
+    display += i < stamps ? "0" : "1";
+    console.log(display);
 }
 
-// function to process the codes
+// function to process the stamps
 function addStamp() {
     if (stamps < maxStamps) {
-        card.children[stamps]
-        div.style.background = "green";
         stamps++;
+        console.log('added Stamp!(&{stamps}/&{maxStamps})');
     }
+    showCard();
 
     if (stamps === maxStamps) {
         // display message
-        message.textContent = "Earned a free product!";
+        console.log("Earned a free product!");
 
     }
 }
 
 // daily special
-const special = document.getElementById("special");
+
 // 0=sunday 1=monday 5=friday 6=saturday
 let day = newDate().getDay();
 // switch statement
 let menu;
+
 switch (day) {
     case 0:
         menu = "Sunday Foam cakes";
@@ -49,4 +48,5 @@ switch (day) {
         menu = "no special offer today";
 
 }
-special.textContent = menu;
+console.log("Special for the day:");
+console.log(menu);
