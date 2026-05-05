@@ -2,6 +2,9 @@
 let stamps = 0;
 const maxStamps = 10;
 
+function showCard() {
+    let display = "";
+}
 
 // the for loop to determine whether to add a stamp
 for (let i = 0; i < maxStamps; 1++) {
