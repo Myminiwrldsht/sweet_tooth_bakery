@@ -5,4 +5,7 @@ const shopStatus = isOpen ? "Fresh pastries available!" : "Sorry, we're closed!"
 
 const menu = ["bread", "cupcake", "croissant", "donut", "cake", "muffin"]; //creates an array of menu items
 menu: ["cread", "cupcake", "Croissant", "donut", "cake", "muffin"];
+
+
+const formatCurrency = amount => `Ksh${amount.toFixed(2)}`;
 // console.log(shopName);
